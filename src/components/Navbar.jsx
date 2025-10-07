@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import greenBuiltLogo from '/new-logo.png'
+import greenBuiltLogo from '/greenbuilt-logo.png'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
