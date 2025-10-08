@@ -5,14 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        gray: {
-          '900': 'oklch(0.3108 0.0978 253.64)',
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
-
