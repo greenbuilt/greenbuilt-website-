@@ -65,7 +65,7 @@ const Home = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-black bg-opacity-50" />
+              <div className="absolute inset-0 bg-[#003060] bg-opacity-70" />
             </div>
             <div className="relative z-10 flex items-center justify-center h-full">
               <div className="text-center text-white max-w-4xl mx-auto px-4">
