@@ -10,28 +10,16 @@ const Videos = () => {
 
   const videos = [
     {
-      id: 1,
-      title: '寰宇新聞報導 - 台灣自癒混凝土技術',
-      category: '媒體報導',
-      duration: '5:20',
-      views: '89K',
-      description: '寰宇新聞專題報導台灣引進自癒混凝土技術，解決老屋漏水問題的創新解決方案。',
-      thumbnail: 'https://img.youtube.com/vi/oUCUjnb3ARY/maxresdefault.jpg',
-      embedId: 'oUCUjnb3ARY',
-      date: '2023-07-22',
-      url: 'https://www.youtube.com/watch?v=oUCUjnb3ARY'
-    },
-    {
-      id: 2,
-      title: 'TVBS新聞報導 - 自癒混凝土技術',
-      category: '媒體報導',
-      duration: '4:15',
-      views: '76K',
-      description: 'TVBS新聞深度報導自癒混凝土技術的最新發展。',
-      thumbnail: 'https://img.youtube.com/vi/2j_E49jFtvE/maxresdefault.jpg',
-      embedId: '2j_E49jFtvE',
-      date: '2023-06-18',
-      url: 'https://www.youtube.com/watch?v=2j_E49jFtvE'
+      id: 23,
+      title: 'Basilisk Self-healing Concrete: The future of sustainable construction',
+      category: '技術說明',
+      duration: '3:42',
+      views: 'NEW',
+      description: '深入了解 Basilisk 自癒混凝土技術：永續建築的未來。',
+      thumbnail: 'https://img.youtube.com/vi/1rJOLKVUbEY/maxresdefault.jpg',
+      embedId: '1rJOLKVUbEY',
+      date: '2024-05-09',
+      url: 'https://www.youtube.com/watch?v=1rJOLKVUbEY'
     },
     {
       id: 3,
@@ -44,18 +32,6 @@ const Videos = () => {
       embedId: 'CXYNJfi2pB4',
       date: '2023-09-12',
       url: 'https://www.youtube.com/watch?v=CXYNJfi2pB4'
-    },
-    {
-      id: 4,
-      title: '中視新聞報導 - 自癒混凝土技術',
-      category: '媒體報導',
-      duration: '3:30',
-      views: '65K',
-      description: '中視新聞專題報導自癒混凝土技術的應用與發展。',
-      thumbnail: 'https://img.youtube.com/vi/Y1LSrKvPdfI/maxresdefault.jpg',
-      embedId: 'Y1LSrKvPdfI',
-      date: '2023-05-20',
-      url: 'https://www.youtube.com/watch?v=Y1LSrKvPdfI'
     },
     {
       id: 5,
@@ -329,36 +305,34 @@ const Videos = () => {
       </section>
 
       {/* Videos Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredVideos.map((video) => (
-              <Card key={video.id} className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer" onClick={() => openVideo(video)}>
-                <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                    <Play className="h-16 w-16 text-white" />
+              <Card key={video.id} className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group" onClick={() => openVideo(video)}>
+                <div className="relative aspect-video">
+                  <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-opacity flex items-center justify-center">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                      <Play fill="currentColor" size={24} />
+                    </div>
                   </div>
-                  <div className="absolute bottom-2 right-2 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm flex items-center">
-                    <Clock className="h-3 w-3 mr-1" />
+                  <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded flex items-center">
+                    <Clock size={12} className="mr-1" />
                     {video.duration}
                   </div>
                 </div>
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
-                    <Badge variant="secondary">{video.category}</Badge>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Eye className="h-3 w-3 mr-1" />
+                    <Badge variant="secondary" className="text-xs">{video.category}</Badge>
+                    <div className="flex items-center text-gray-500 text-xs">
+                      <Eye size={12} className="mr-1" />
                       {video.views}
                     </div>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2 line-clamp-2">{video.title}</h3>
-                  <p className="text-gray-600 text-sm line-clamp-3">{video.description}</p>
-                  <div className="mt-4 text-xs text-gray-500">{video.date}</div>
+                  <h3 className="text-lg font-bold mb-2 line-clamp-2 group-hover:text-primary transition-colors">{video.title}</h3>
+                  <p className="text-gray-600 text-sm line-clamp-2 mb-4">{video.description}</p>
+                  <div className="text-xs text-gray-400">{video.date}</div>
                 </CardContent>
               </Card>
             ))}
@@ -366,136 +340,19 @@ const Videos = () => {
         </div>
       </section>
 
-      {/* Featured Video Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              精選影片
-            </h2>
-            <p className="text-xl text-gray-600">
-              最受歡迎的自癒混凝土技術介紹影片
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
-              <img
-                src="https://img.youtube.com/vi/znSeL66e8qE/maxresdefault.jpg"
-                alt="精選影片"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center cursor-pointer hover:bg-opacity-30 transition-all" onClick={() => openVideo({
-                id: 'featured',
-                title: 'TED論壇：若是混凝土能夠自行修復呢？(可選擇中文字幕)',
-                category: '技術說明',
-                duration: '16:45',
-                views: '189K',
-                description: 'TED論壇探討自癒混凝土技術的可能性和未來發展，提供中文字幕選項。',
-                thumbnail: 'https://img.youtube.com/vi/znSeL66e8qE/maxresdefault.jpg',
-                embedId: 'znSeL66e8qE',
-                date: '2023-07-30',
-                url: 'https://www.youtube.com/watch?v=znSeL66e8qE'
-              })}>
-                <Play className="h-20 w-20 text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                自癒混凝土：建築業的革命性突破
-              </h3>
-              <p className="text-lg text-gray-600 mb-6">
-                這部影片詳細介紹了自癒混凝土技術的發展歷程、工作原理以及在全球各地的成功應用案例。從荷蘭台夫特理工大學的研發實驗室到台灣的實際工程項目，見證這項技術如何改變建築業的未來。
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-primary mr-2" />
-                  <span>影片長度：15分鐘</span>
-                </div>
-                <div className="flex items-center">
-                  <Eye className="h-5 w-5 text-primary mr-2" />
-                  <span>觀看次數：500K+</span>
-                </div>
-              </div>
-              <Button size="lg" className="mt-6" onClick={() => openVideo({
-                id: 'featured',
-                title: 'TED論壇：若是混凝土能夠自行修復呢？(可選擇中文字幕)',
-                category: '技術說明',
-                duration: '16:45',
-                views: '189K',
-                description: 'TED論壇探討自癒混凝土技術的可能性和未來發展，提供中文字幕選項。',
-                thumbnail: 'https://img.youtube.com/vi/znSeL66e8qE/maxresdefault.jpg',
-                embedId: 'znSeL66e8qE',
-                date: '2023-07-30',
-                url: 'https://www.youtube.com/watch?v=znSeL66e8qE'
-              })}>
-                立即觀看
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Video Modal */}
       {selectedVideo && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" onClick={closeVideo}>
-          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto" onClick={(e) => e.stopPropagation()}>
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-bold">{selectedVideo.title}</h3>
-                <button
-                  onClick={closeVideo}
-                  className="text-gray-500 hover:text-gray-700 text-2xl"
-                >
-                  ×
-                </button>
-              </div>
-              <div className="aspect-video mb-4">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${selectedVideo.embedId}`}
-                  title={selectedVideo.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="flex items-center gap-4 mb-4">
-                <Badge>{selectedVideo.category}</Badge>
-                <div className="flex items-center text-sm text-gray-500">
-                  <Clock className="h-4 w-4 mr-1" />
-                  {selectedVideo.duration}
-                </div>
-                <div className="flex items-center text-sm text-gray-500">
-                  <Eye className="h-4 w-4 mr-1" />
-                  {selectedVideo.views}
-                </div>
-              </div>
-              <p className="text-gray-600">{selectedVideo.description}</p>
-            </div>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-90">
+          <div className="relative w-full max-w-5xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
+            <button onClick={closeVideo} className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors p-2 bg-black bg-opacity-50 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <iframe className="w-full h-full" src={`https://www.youtube.com/embed/${selectedVideo.embedId}?autoplay=1`} title={selectedVideo.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       )}
-
-      {/* CTA Section */}
-      <section className="py-20 bg-primary text-white">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">
-            想了解更多技術細節？
-          </h2>
-          <p className="text-xl mb-8">
-            聯絡我們的技術團隊，獲得更詳細的產品資訊和技術支援
-          </p>
-          <Button size="lg" variant="secondary" asChild>
-            <a href="/contact">技術諮詢</a>
-          </Button>
-        </div>
-      </section>
     </div>
   )
 }
 
 export default Videos
-
-
