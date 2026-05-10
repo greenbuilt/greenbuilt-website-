@@ -8,7 +8,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1">
-            <h3 className="text-2xl font-bold mb-4">GreenBuilt Taiwan</h3>
+            <h3 className="text-xl font-bold mb-2">綠築再生科技有限公司</h3>
+            <h3 className="text-lg font-semibold mb-4 leading-tight">Greenbuilt Regeneration Technology Co.,LTD.</h3>
             <p className="text-gray-300 mb-4">
               「療癒系」自我修復水泥，讓您告別滲漏的隱患！
             </p>
@@ -69,18 +70,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone size={16} className="mr-2" />
-                <span className="text-gray-300">+886 0911005440</span>
+                <span className="text-gray-300">+886 3 3931500</span>
               </div>
               <div className="flex items-center">
                 <Mail size={16} className="mr-2" />
                 <span className="text-gray-300">greenbuilt2023@gmail.com</span>
               </div>
               <div className="flex items-start">
-                <MapPin size={16} className="mr-2 mt-1" />
-                <span className="text-gray-300">
-                  No. 18, Alley 56 Le Quang Dao,<br />
-                  Phu Do Ward, Nam Tu Liem<br />
-                  District, Hanoi
+                <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
+                <span className="text-gray-300 text-sm">
+                  桃園市大園區航翔路 107 號 2 樓 W2047B 室<br />
+                  Room W2047B, 2nd Floor, No. 107, Hangxiang Rd., Dayuan District, Taoyuan City
                 </span>
               </div>
             </div>
@@ -89,7 +89,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 GreenBuilt Taiwan. All rights reserved. | 
+            © 2024 綠築再生科技有限公司. All rights reserved. | 
             <Link to="/privacy" className="hover:text-white ml-2">隱私政策</Link> | 
             <Link to="/terms" className="hover:text-white ml-2">使用條款</Link>
           </p>
@@ -100,4 +100,3 @@ const Footer = () => {
 }
 
 export default Footer
-
