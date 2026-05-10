@@ -35,6 +35,31 @@ const About = () => {
       year: '2026',
       title: '公司成立',
       description: '正式引進荷蘭GreenBuilt自癒混凝土技術到台灣'
+    },
+    {
+      year: '',
+      title: '首個項目',
+      description: '完成第一個商業項目，證明技術在台灣環境下的有效性'
+    },
+    {
+      year: '',
+      title: '技術認證',
+      description: '獲得台灣建材相關認證，建立本地化技術標準'
+    },
+    {
+      year: '',
+      title: '規模擴張',
+      description: '業務快速成長，服務範圍擴展至全台各地'
+    },
+    {
+      year: '',
+      title: '重大突破',
+      description: '完成台北101等指標性項目，技術獲得市場廣泛認可'
+    },
+    {
+      year: '',
+      title: '持續創新',
+      description: '持續技術研發，推出更多創新產品和解決方案'
     }
   ]
 
@@ -157,7 +182,9 @@ const About = () => {
                   <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
                     <Card className="hover:shadow-lg transition-shadow">
                       <CardContent className="p-6">
-                        <div className="text-2xl font-bold text-primary mb-2">{milestone.year}</div>
+                        {milestone.year && (
+                          <div className="text-2xl font-bold text-primary mb-2">{milestone.year}</div>
+                        )}
                         <h3 className="text-xl font-semibold mb-3">{milestone.title}</h3>
                         <p className="text-gray-600">{milestone.description}</p>
                       </CardContent>
