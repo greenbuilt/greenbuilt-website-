@@ -19,11 +19,17 @@ const DownloadSection = ({
       link: "https://drive.google.com/drive/my-drive",
       type: "PDF"
     },
-    {
+      {
       name: "國際認證文件彙編",
       description: "包含 NEN-EN 1503-2 等多項國際品質認證",
       link: "https://drive.google.com/drive/my-drive",
       type: "DOC"
+    },
+    {
+      name: "MOU 中英證書",
+      description: "合作備忘錄中英文對照證書文件",
+      link: "https://drive.google.com/drive/my-drive",
+      type: "PDF"
     }
   ]
 }) => {
