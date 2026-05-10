@@ -1,5 +1,6 @@
-import { Users, Award, Globe, Target, Heart, Lightbulb } from 'lucide-react'
+import { Users, Award, Globe, Heart, Lightbulb } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
+import { Link } from 'react-router-dom'
 
 import teamImage from '../assets/DJ86w14YcdNd.jpg'
 import meetingImage from '../assets/G05ua7kgP0lc.jpg'
@@ -20,7 +21,7 @@ const About = () => {
     {
       icon: <Users className="h-8 w-8" />,
       title: '服務',
-      description: '以客戶為中心，提供專業、及時、全面的技術支援 and 服務'
+      description: '以客戶為中心，提供專業、及時、全面的技術支援與服務'
     },
     {
       icon: <Globe className="h-8 w-8" />,
