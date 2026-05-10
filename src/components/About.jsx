@@ -65,21 +65,21 @@ const About = () => {
 
   const team = [
     {
-      name: '張建國',
-      position: '執行長',
-      description: '擁有20年建築業經驗，致力於推動台灣建築技術創新',
+      name: '王建華 Chien-Hua Wang',
+      position: '總裁',
+      description: '領導綠築再生科技的整體戰略發展，致力於引進全球頂尖建築科技',
       image: teamImage
     },
     {
-      name: '李美玲',
-      position: '技術總監',
-      description: '材料工程博士，專精於混凝土技術研發和應用',
+      name: '潘詠霖 Peter Pan',
+      position: '材料技術總監',
+      description: '專精於自癒混凝土材料科學，負責技術研發與在地化應用標準',
       image: meetingImage
     },
     {
-      name: '王志明',
-      position: '營運總監',
-      description: '豐富的項目管理經驗，確保每個工程的順利執行',
+      name: '葉偉欽 William Yeh',
+      position: '銷售總監',
+      description: '擁有豐富的市場開發經驗，負責推廣自癒技術於全台各大建築工程',
       image: officeImage
     }
   ]
