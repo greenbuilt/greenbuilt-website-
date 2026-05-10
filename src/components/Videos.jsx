@@ -44,7 +44,7 @@ const Videos = () => {
       category: '施工教學',
       duration: '15:20',
       views: '78K',
-      description: 'MR3乾拌砂漿的專業施工方法和技術要點示範。',
+      description: 'MR3乾拌砂漿的專業施工方法 and 技術要點示範。',
       embedId: 'LRCMyPxTWtw',
       date: '2023-08-08'
     },
@@ -271,12 +271,9 @@ const Videos = () => {
               <Card key={video.id} className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group" onClick={() => openVideo(video)}>
                 <div className="relative aspect-video bg-gray-200">
                   <img 
-                    src={`https://i.ytimg.com/vi/${video.embedId}/hqdefault.jpg`} 
+                    src={`https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`} 
                     alt={video.title} 
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    onError={(e) => {
-                      e.target.src = `https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`;
-                    }}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-opacity flex items-center justify-center">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
