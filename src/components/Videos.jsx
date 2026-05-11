@@ -207,17 +207,6 @@ const Videos = () => {
       date: '2023-03-15'
     },
     {
-      id: 19,
-      title: '癒合過程縮時攝影',
-      category: '技術說明',
-      duration: '3:15',
-      views: '167K',
-      description: '自癒混凝土裂縫癒合過程的縮時攝影記錄。',
-      thumbnail: 'https://img.youtube.com/vi/ztAmktMQDb4/maxresdefault.jpg',
-      embedId: 'ztAmktMQDb4',
-      date: '2023-04-28'
-    },
-    {
       id: 20,
       title: 'ER7施工影片(日文)',
       category: '施工教學',
