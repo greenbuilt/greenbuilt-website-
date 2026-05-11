@@ -10,25 +10,25 @@ const DownloadSection = ({
     {
       name: "Greenheal 產品手冊",
       description: "詳細介紹生物型自行修復水泥的應用與優勢",
-      link: "https://drive.google.com/drive/my-drive",
+      link: "https://drive.google.com/file/d/1aVhzyTAjNtKgSwdzZMzcTZXbAYGAytSv/view?usp=sharing",
       type: "PDF"
     },
     {
       name: "Basilisk ER7 技術規格書",
       description: "混凝土裂縫修復產品的技術參數與施工指南",
-      link: "https://drive.google.com/drive/my-drive",
+      link: "https://drive.google.com/file/d/1HExSgrto4qKCzfDsqdjyVx-imytZGaSB/view?usp=sharing",
       type: "PDF"
     },
       {
       name: "國際認證文件彙編",
       description: "包含 NEN-EN 1503-2 等多項國際品質認證",
-      link: "https://drive.google.com/drive/my-drive",
+      link: "https://drive.google.com/file/d/1EmNt11DcslzZYird54DLnEfRyd0-nam0/view?usp=sharing",
       type: "DOC"
     },
     {
       name: "MOU 中英證書",
       description: "合作備忘錄中英文對照證書文件",
-      link: "https://drive.google.com/drive/my-drive",
+      link: "https://drive.google.com/file/d/1CMd1AYyOK02yRklkkQ2sHAZbFHrSO_jz/view?usp=sharing",
       type: "PDF"
     }
   ]
