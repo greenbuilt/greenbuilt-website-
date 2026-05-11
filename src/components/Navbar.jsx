@@ -40,7 +40,7 @@ const Navbar = () => {
                     ? 'text-primary border-b-2 border-primary'
                     : 'text-gray-700 hover:text-primary'
                 }`}
-                onClick={() => console.log(`Active path: ${location.pathname}, Item path: ${item.path}, ClassName: ${location.pathname === item.path ? 'text-primary border-b-2 border-primary' : 'text-gray-700 hover:text-primary'}`)}
+
               >
                 {item.label}
               </Link>
