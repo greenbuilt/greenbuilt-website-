@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight, Play, Shield, Award, Leaf } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import DownloadSection from './DownloadSection'
 
 // Import images
 import heroImage1 from '../assets/Y9PMcaimRg7X.jpg'
@@ -195,9 +194,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Download Section */}
-      <DownloadSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">

@@ -16,6 +16,7 @@ const Navbar = () => {
     { path: '/projects', label: '工程實績' },
     { path: '/faq', label: '常見問題集' },
     { path: '/about', label: '關於我們' },
+    { path: '/downloads', label: '文件下載' },
   ]
 
   return (

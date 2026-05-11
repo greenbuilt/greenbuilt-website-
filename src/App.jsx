@@ -9,6 +9,7 @@ import Videos from './components/Videos'
 import Faq from './components/Faq'
 import About from './components/About'
 import Contact from './components/Contact'
+import Downloads from './components/Downloads'
 import Footer from './components/Footer'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/faq" element={<Faq />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/downloads" element={<Downloads />} />
           </Routes>
         </main>
         <Footer />

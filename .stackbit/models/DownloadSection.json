@@ -13,38 +13,66 @@
       "name": "subtitle",
       "label": "副標題",
       "type": "string",
-      "default": "獲取最新的產品手冊、技術規格及認證文件"
+      "default": "獲取最新的產品手冊、技術規格、認證文件及合約授權資料"
     },
     {
-      "name": "items",
-      "label": "下載項目",
+      "name": "categories",
+      "label": "文件分類",
       "type": "list",
       "items": {
         "type": "object",
         "fields": [
           {
-            "name": "name",
-            "label": "文件名稱",
+            "name": "id",
+            "label": "分類識別碼",
             "type": "string",
-            "default": "新文件"
+            "default": "category"
+          },
+          {
+            "name": "label",
+            "label": "分類名稱",
+            "type": "string",
+            "default": "新分類"
           },
           {
             "name": "description",
-            "label": "描述",
+            "label": "分類描述",
             "type": "string",
-            "default": "請輸入文件描述"
+            "default": "請輸入分類描述"
           },
           {
-            "name": "link",
-            "label": "Google Drive 連結",
-            "type": "string",
-            "default": "https://drive.google.com/drive/my-drive"
-          },
-          {
-            "name": "type",
-            "label": "檔案類型 (如 PDF, DOC)",
-            "type": "string",
-            "default": "PDF"
+            "name": "items",
+            "label": "下載項目",
+            "type": "list",
+            "items": {
+              "type": "object",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "文件名稱",
+                  "type": "string",
+                  "default": "新文件"
+                },
+                {
+                  "name": "description",
+                  "label": "描述",
+                  "type": "string",
+                  "default": "請輸入文件描述"
+                },
+                {
+                  "name": "link",
+                  "label": "Google Drive 連結",
+                  "type": "string",
+                  "default": "https://drive.google.com/drive/my-drive"
+                },
+                {
+                  "name": "type",
+                  "label": "檔案類型 (如 PDF, DOC, MP4)",
+                  "type": "string",
+                  "default": "PDF"
+                }
+              ]
+            }
           }
         ]
       }
