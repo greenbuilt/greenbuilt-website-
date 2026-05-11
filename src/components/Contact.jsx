@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: '電話',
-      content: '+886 0911005440',
+      content: '+886 3 3931500',
       description: '週一至週五 09:00-18:00'
     },
     {
@@ -68,7 +68,7 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: '地址',
-      content: 'No.18, Alley 56 Le Quang Dao, Phu Do Ward, Nam Tu Liem District, Hanoi',
+      content: '桃園市大園區航翔路 107 號 2 樓 W2047B 室 (Room W2047B, 2nd Floor, No. 107, Hangxiang Rd., Dayuan District, Taoyuan City)',
       description: '綠築再生科技有限公司'
     },
     {

@@ -66,7 +66,7 @@ const About = () => {
   const team = [
     {
       name: '王建華 Chien-Hua Wang',
-      position: '總裁',
+      position: '董事長',
       description: '領導綠築再生科技的整體戰略發展，致力於引進全球頂尖建築科技',
       image: teamImage
     },

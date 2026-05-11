@@ -21,10 +21,31 @@ import thumbqJOKG3zY0Lw from '../assets/thumbnails/qJOKG3zY0Lw.jpg'
 import thumbBZHjGrqzukw from '../assets/thumbnails/BZHjGrqzukw.jpg'
 import thumbiRWUpO6jGBA from '../assets/thumbnails/iRWUpO6jGBA.jpg'
 import thumbmTWUu5KJ5c from '../assets/thumbnails/mTWUu-5KJ5c.jpg'
-import thumbztAmktMQDb4 from '../assets/thumbnails/ztAmktMQDb4.jpg'
 import thumbFpDn9yj_n4w from '../assets/thumbnails/FpDn9yj_n4w.jpg'
 import thumb9vMs2DuBYJk from '../assets/thumbnails/9vMs2DuBYJk.jpg'
 import thumbRgJT_cjzXko from '../assets/thumbnails/RgJT_cjzXko.jpg'
+
+const thumbnailMap = {
+  '1rJOLKVUbEY': thumb1rJOLKVUbEY,
+  'CXYNJfi2pB4': thumbCXYNJfi2pB4,
+  'eN-vJB7yeJI': thumbeNvJB7yeJI,
+  'LRCMyPxTWtw': thumbLRCMyPxTWtw,
+  '0l_9NDZ8VZA': thumb0l9NDZ8VZA,
+  'qm-Hi_V2ijY': thumbqmHiV2ijY,
+  '4deVfT8cYhA': thumb4deVfT8cYhA,
+  'M7i_Xv9tWnw': thumbM7iXv9tWnw,
+  'fe5HKMlWBBw': thumbfe5HKMlWBBw,
+  'znSeL66e8qE': thumbznSeL66e8qE,
+  'pz5RZV-Jn0Y': thumbpz5RZVJn0Y,
+  'gvBUG_EjV98': thumbgvBUG_EjV98,
+  'qJOKG3zY0Lw': thumbqJOKG3zY0Lw,
+  'BZHjGrqzukw': thumbBZHjGrqzukw,
+  'iRWUpO6jGBA': thumbiRWUpO6jGBA,
+  'mTWUu-5KJ5c': thumbmTWUu5KJ5c,
+  'FpDn9yj_n4w': thumbFpDn9yj_n4w,
+  '9vMs2DuBYJk': thumb9vMs2DuBYJk,
+  'RgJT_cjzXko': thumbRgJT_cjzXko,
+}
 
 const Videos = () => {
   const [selectedVideo, setSelectedVideo] = useState(null)
@@ -301,23 +322,27 @@ const Videos = () => {
             {filteredVideos.map((video) => (
               <Card key={video.id} className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group" onClick={() => openVideo(video)}>
                 <div className="relative aspect-video bg-gray-200">
-                  <img 
-                    src={video.thumbnail} 
-                    alt={video.title} 
+                  <img
+                    src={thumbnailMap[video.embedId] || video.thumbnail}
+                    alt={video.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     style={{ display: 'block', minHeight: '100%' }}
                     onError={(e) => {
-                      if (e.target.src !== `https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`) {
-                        e.target.src = `https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`;
+                      const ytMax = `https://img.youtube.com/vi/${video.embedId}/maxresdefault.jpg`;
+                      const ytHq = `https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`;
+                      if (e.target.src !== ytMax && e.target.src !== ytHq) {
+                        e.target.src = ytMax;
+                      } else if (e.target.src === ytMax) {
+                        e.target.src = ytHq;
                       }
                     }}
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-opacity flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-opacity flex items-center justify-center">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                       <Play fill="currentColor" size={24} />
                     </div>
                   </div>
-                  <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded flex items-center">
+                  <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded flex items-center">
                     <Clock size={12} className="mr-1" />
                     {video.duration}
                   </div>
@@ -342,9 +367,9 @@ const Videos = () => {
 
       {/* Video Modal */}
       {selectedVideo && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-90">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90">
           <div className="relative w-full max-w-5xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
-            <button onClick={closeVideo} className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors p-2 bg-black bg-opacity-50 rounded-full">
+            <button onClick={closeVideo} className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors p-2 bg-black/50 rounded-full">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
             <iframe className="w-full h-full" src={`https://www.youtube.com/embed/${selectedVideo.embedId}?autoplay=1`} title={selectedVideo.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
