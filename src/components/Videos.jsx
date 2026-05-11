@@ -37,7 +37,7 @@ const Videos = () => {
       duration: '3:42',
       views: 'NEW',
       description: '深入了解 Basilisk 自癒混凝土技術：永續建築的未來。',
-      thumbnail: 'https://img.youtube.com/vi/1rJOLKVUbEY/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/1rJOLKVUbEY/hqdefault.jpg',
       embedId: '1rJOLKVUbEY',
       date: '2024-05-09'
     },
@@ -48,7 +48,7 @@ const Videos = () => {
       duration: '12:45',
       views: '156K',
       description: '日本大和房屋工業超大型室內鮭魚養殖場建設案例。',
-      thumbnail: 'https://img.youtube.com/vi/CXYNJfi2pB4/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/CXYNJfi2pB4/hqdefault.jpg',
       embedId: 'CXYNJfi2pB4',
       date: '2023-09-12'
     },
@@ -59,7 +59,7 @@ const Videos = () => {
       duration: '3:45',
       views: '125K',
       description: 'CNN國際媒體深度報導自癒混凝土技術的革命性突破，展示其在建築業的應用前景。',
-      thumbnail: 'https://img.youtube.com/vi/eN-vJB7yeJI/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/eN-vJB7yeJI/hqdefault.jpg',
       embedId: 'eN-vJB7yeJI',
       date: '2023-08-15'
     },
@@ -70,7 +70,7 @@ const Videos = () => {
       duration: '15:20',
       views: '78K',
       description: 'MR3乾拌砂漿的專業施工方法與技術要點示範。',
-      thumbnail: 'https://img.youtube.com/vi/LRCMyPxTWtw/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/LRCMyPxTWtw/hqdefault.jpg',
       embedId: 'LRCMyPxTWtw',
       date: '2023-08-08'
     },
@@ -81,7 +81,7 @@ const Videos = () => {
       duration: '18:30',
       views: '256K',
       description: 'TED論壇關於自癒混凝土技術的專業演講。',
-      thumbnail: 'https://img.youtube.com/vi/0l_9NDZ8VZA/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/0l_9NDZ8VZA/hqdefault.jpg',
       embedId: '0l_9NDZ8VZA',
       date: '2023-09-05'
     },
@@ -92,7 +92,7 @@ const Videos = () => {
       duration: '10:45',
       views: '65K',
       description: 'ER7液體修護劑的正確使用方法和操作指南。',
-      thumbnail: 'https://img.youtube.com/vi/qm-Hi_V2ijY/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/qm-Hi_V2ijY/hqdefault.jpg',
       embedId: 'qm-Hi_V2ijY',
       date: '2023-07-15'
     },
@@ -103,7 +103,7 @@ const Videos = () => {
       duration: '8:30',
       views: '134K',
       description: '隧道工程中自癒混凝土技術應用的動畫演示。',
-      thumbnail: 'https://img.youtube.com/vi/4deVfT8cYhA/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/4deVfT8cYhA/hqdefault.jpg',
       embedId: '4deVfT8cYhA',
       date: '2023-08-25'
     },
@@ -114,7 +114,7 @@ const Videos = () => {
       duration: '16:20',
       views: '189K',
       description: '大型蓄水池工程中使用自癒原劑的施工案例記錄。',
-      thumbnail: 'https://img.youtube.com/vi/M7i_Xv9tWnw/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/M7i_Xv9tWnw/hqdefault.jpg',
       embedId: 'M7i_Xv9tWnw',
       date: '2023-07-08'
     },
@@ -125,7 +125,7 @@ const Videos = () => {
       duration: '25:15',
       views: '87K',
       description: '日本會澤高壓混凝土公司關於自癒混凝土技術的專業演講，提供日語同步口譯。',
-      thumbnail: 'https://img.youtube.com/vi/fe5HKMlWBBw/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/fe5HKMlWBBw/hqdefault.jpg',
       embedId: 'fe5HKMlWBBw',
       date: '2023-05-12'
     },
@@ -136,7 +136,7 @@ const Videos = () => {
       duration: '16:45',
       views: '189K',
       description: 'TED論壇探討自癒混凝土技術的可能性和未來發展，提供中文字幕選項。',
-      thumbnail: 'https://img.youtube.com/vi/znSeL66e8qE/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/znSeL66e8qE/hqdefault.jpg',
       embedId: 'znSeL66e8qE',
       date: '2023-07-30'
     },
@@ -147,7 +147,7 @@ const Videos = () => {
       duration: '2:45',
       views: '98K',
       description: 'World Breaking News關於自癒混凝土技術的國際新聞報導。',
-      thumbnail: 'https://img.youtube.com/vi/pz5RZV-Jn0Y/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/pz5RZV-Jn0Y/hqdefault.jpg',
       embedId: 'pz5RZV-Jn0Y',
       date: '2023-04-10'
     },
@@ -158,7 +158,7 @@ const Videos = () => {
       duration: '8:20',
       views: '134K',
       description: '荷蘭Basilisk公司生物型自癒混凝土技術的詳細介紹。',
-      thumbnail: 'https://img.youtube.com/vi/gvBUG_EjV98/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/gvBUG_EjV98/hqdefault.jpg',
       embedId: 'gvBUG_EjV98',
       date: '2023-06-25'
     },
@@ -169,7 +169,7 @@ const Videos = () => {
       duration: '18:30',
       views: '112K',
       description: '使用ER7液體修復系統進行混凝土路面修復的完整過程示範。',
-      thumbnail: 'https://img.youtube.com/vi/qJOKG3zY0Lw/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/qJOKG3zY0Lw/hqdefault.jpg',
       embedId: 'qJOKG3zY0Lw',
       date: '2023-06-02'
     },
@@ -180,7 +180,7 @@ const Videos = () => {
       duration: '11:30',
       views: '98K',
       description: '札幌市水道局使用自癒混凝土技術的工程應用案例。',
-      thumbnail: 'https://img.youtube.com/vi/BZHjGrqzukw/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/BZHjGrqzukw/hqdefault.jpg',
       embedId: 'BZHjGrqzukw',
       date: '2023-05-30'
     },
@@ -191,7 +191,7 @@ const Videos = () => {
       duration: '9:45',
       views: '76K',
       description: '會澤高壓混凝土公司鵡川工場的混凝土養護槽工程案例。',
-      thumbnail: 'https://img.youtube.com/vi/iRWUpO6jGBA/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/iRWUpO6jGBA/hqdefault.jpg',
       embedId: 'iRWUpO6jGBA',
       date: '2023-03-28'
     },
@@ -202,7 +202,7 @@ const Videos = () => {
       duration: '1:30',
       views: '45K',
       description: '低碳永續家園建設的形象廣告，展示自癒混凝土技術的環保價值。',
-      thumbnail: 'https://img.youtube.com/vi/mTWUu-5KJ5c/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/mTWUu-5KJ5c/hqdefault.jpg',
       embedId: 'mTWUu-5KJ5c',
       date: '2023-03-15'
     },
@@ -213,7 +213,7 @@ const Videos = () => {
       duration: '3:15',
       views: '167K',
       description: '自癒混凝土裂縫癒合過程的縮時攝影記錄。',
-      thumbnail: 'https://img.youtube.com/vi/ztAmktMQDb4/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/ztAmktMQDb4/hqdefault.jpg',
       embedId: 'ztAmktMQDb4',
       date: '2023-04-28'
     },
@@ -224,7 +224,7 @@ const Videos = () => {
       duration: '14:15',
       views: '58K',
       description: 'ER7產品的施工方法和技術要點，日文解說版本。',
-      thumbnail: 'https://img.youtube.com/vi/FpDn9yj_n4w/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/FpDn9yj_n4w/hqdefault.jpg',
       embedId: 'FpDn9yj_n4w',
       date: '2023-04-20'
     },
@@ -235,7 +235,7 @@ const Videos = () => {
       duration: '12:30',
       views: '145K',
       description: '自癒混凝土技術原理的詳細說明，英文版本。',
-      thumbnail: 'https://img.youtube.com/vi/9vMs2DuBYJk/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/9vMs2DuBYJk/hqdefault.jpg',
       embedId: '9vMs2DuBYJk',
       date: '2023-03-22'
     },
@@ -246,7 +246,7 @@ const Videos = () => {
       duration: '11:45',
       views: '92K',
       description: '自癒混凝土技術原理的詳細說明，日文版本。',
-      thumbnail: 'https://img.youtube.com/vi/RgJT_cjzXko/maxresdefault.jpg',
+      thumbnail: 'https://img.youtube.com/vi/RgJT_cjzXko/hqdefault.jpg',
       embedId: 'RgJT_cjzXko',
       date: '2023-02-18'
     }
@@ -313,16 +313,13 @@ const Videos = () => {
               <Card key={video.id} className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group" onClick={() => openVideo(video)}>
                 <div className="relative aspect-video bg-gray-200">
                   <img 
-                    src={video.thumbnail} 
-                    alt={video.title} 
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    style={{ display: 'block', minHeight: '100%' }}
-                    onError={(e) => {
-                      if (e.target.src !== `https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`) {
-                        e.target.src = `https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`;
-                      }
-                    }}
-                  />
+                               <img
+                      src={video.thumbnail}
+                      alt={video.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 block"
+                      style={{ backgroundColor: 'transparent' }}
+                      loading="lazy"
+                    />              />
                   <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-opacity flex items-center justify-center">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                       <Play fill="currentColor" size={24} />
