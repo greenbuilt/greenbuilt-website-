@@ -65,7 +65,7 @@ const Home = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-[#003060] bg-opacity-70" />
+              <div className="absolute inset-0 bg-[#003060]/70" />
             </div>
             <div className="relative z-10 flex items-center justify-center h-full">
               <div className="text-center text-white max-w-4xl mx-auto px-4">
@@ -113,7 +113,7 @@ const Home = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
-                index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
+                index === currentSlide ? 'bg-white' : 'bg-white/50'
               }`}
             />
           ))}
