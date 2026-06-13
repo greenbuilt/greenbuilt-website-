@@ -89,7 +89,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 綠築再生科技有限公司. All rights reserved. | 
+            © 2026 綠築再生科技有限公司. All rights reserved. | 
             <Link to="/privacy" className="hover:text-white ml-2">隱私政策</Link> | 
             <Link to="/terms" className="hover:text-white ml-2">使用條款</Link>
           </p>
